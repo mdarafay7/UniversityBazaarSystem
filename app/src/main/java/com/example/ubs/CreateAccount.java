@@ -74,7 +74,6 @@ public class CreateAccount extends AppCompatActivity {
         CreateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 String email = Email.getText().toString();
                 String pass = Password.getText().toString();
 
