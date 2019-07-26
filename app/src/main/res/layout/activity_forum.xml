@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_lisdt"
@@ -8,59 +8,60 @@
     android:background="@drawable/download"
     android:backgroundTintMode="screen"
     android:hapticFeedbackEnabled="true"
-    tools:context=".MainActivity">
+    tools:context=".Forum">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="59dp"
+        android:background="#A7C9E2"
+        tools:itemCount="8"
+        tools:listitem="@layout/recycler_view_item"></android.support.v7.widget.RecyclerView>
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="74dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="169dp"
         android:layout_marginBottom="24dp"
-        android:layout_x="0dp"
-        android:layout_y="307dp"
         android:background="#FF6D00"
         android:text="TRADE" />
 
     <Button
         android:id="@+id/main"
-        android:layout_width="match_parent"
-        android:layout_height="78dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="25dp"
         android:layout_marginBottom="0dp"
-        android:layout_x="0dp"
-        android:layout_y="412dp"
         android:background="#FF6D00"
         android:text="CLUBS" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="416dp"
-        android:layout_height="67dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="285dp"
-        android:layout_marginBottom="3dp"
-        android:layout_x="0dp"
-        android:layout_y="531dp"
+        android:layout_marginStart="325dp"
+        android:layout_marginBottom="17dp"
         android:background="#FF6D00"
         android:text="FORUM" />
 
-    <TextView
-        android:id="@+id/textView"
+    <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="match_parent"
-        android:layout_height="112dp"
-        android:layout_x="0dp"
-        android:layout_y="0dp"
-        android:fontFamily="@font/habibi"
-        android:text="Welcome mdarafay"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="61dp" />
+        android:layout_height="102dp"
+        android:paddingLeft="10dp"
+        app:srcCompat="@drawable/forum" />
 
 
-</AbsoluteLayout>
+</RelativeLayout>
