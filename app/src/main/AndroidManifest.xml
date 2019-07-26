@@ -18,5 +18,10 @@
         </activity>
     <activity android:name=".MainActivity" />
     <activity android:name=".CreateAccount"></activity>
+        <activity android:name=".Clubs" />
+        <activity android:name=".Forum" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 </manifest>
