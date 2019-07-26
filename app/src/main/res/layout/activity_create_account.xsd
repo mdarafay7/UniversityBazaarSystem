@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="android.support.constraint.ConstraintLayout" type="android.support.constraint.ConstraintLayoutType"/>
+  <xs:complexType name="TextViewType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute ref="and:id" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_width" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_height" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_marginStart" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_marginLeft" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_marginTop" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_marginEnd" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_marginRight" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_marginBottom" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:text" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:textSize" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="res:layout_constraintBottom_toBottomOf" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+        <xs:attribute ref="res:layout_constraintEnd_toEndOf" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+        <xs:attribute ref="res:layout_constraintStart_toStartOf" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+        <xs:attribute ref="res:layout_constraintTop_toTopOf" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+        <xs:attribute ref="res:layout_constraintVertical_bias" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+        <xs:attribute ref="res:layout_constraintHorizontal_bias" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+        <xs:attribute ref="res:layout_constraintTop_toBottomOf" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="EditTextType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute ref="and:id" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_width" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_height" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_marginStart" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_marginLeft" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_marginTop" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_marginEnd" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_marginRight" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_marginBottom" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:ems" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:hint" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:inputType" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="res:layout_constraintBottom_toBottomOf" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+        <xs:attribute ref="res:layout_constraintEnd_toEndOf" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+        <xs:attribute ref="res:layout_constraintHorizontal_bias" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+        <xs:attribute ref="res:layout_constraintStart_toStartOf" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+        <xs:attribute ref="res:layout_constraintTop_toBottomOf" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+        <xs:attribute ref="res:layout_constraintVertical_bias" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="ButtonType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute ref="and:id" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_width" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_height" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_marginStart" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_marginLeft" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_marginTop" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_marginEnd" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_marginRight" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:layout_marginBottom" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="and:text" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="res:layout_constraintBottom_toBottomOf" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+        <xs:attribute ref="res:layout_constraintEnd_toEndOf" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+        <xs:attribute ref="res:layout_constraintHorizontal_bias" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+        <xs:attribute ref="res:layout_constraintStart_toStartOf" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+        <xs:attribute ref="res:layout_constraintTop_toBottomOf" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+        <xs:attribute ref="res:layout_constraintVertical_bias" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+        <xs:attribute ref="and:textSize" xmlns:and="http://schemas.android.com/apk/res/android"/>
+        <xs:attribute ref="res:layout_constraintTop_toTopOf" xmlns:res="http://schemas.android.com/apk/res-auto"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="android.support.constraint.ConstraintLayoutType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="TextViewType" name="TextView"/>
+      <xs:element type="EditTextType" name="EditText" maxOccurs="unbounded" minOccurs="0"/>
+      <xs:element type="ButtonType" name="Button"/>
+    </xs:choice>
+    <xs:attribute ref="and:layout_width" xmlns:and="http://schemas.android.com/apk/res/android"/>
+    <xs:attribute ref="and:layout_height" xmlns:and="http://schemas.android.com/apk/res/android"/>
+    <xs:attribute ref="tool:context" xmlns:tool="http://schemas.android.com/tools"/>
+  </xs:complexType>
+</xs:schema>
