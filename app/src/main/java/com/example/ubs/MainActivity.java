@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button addClubs;
+    private Button Clubs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,12 +18,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toast.makeText(MainActivity.this,"Club has been added",Toast.LENGTH_LONG).show();
 
-        addClubs=findViewById(R.id.addClubs);
+        Clubs=findViewById(R.id.Clubs);
 
-        addClubs.setOnClickListener(new View.OnClickListener() {
+        Clubs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, CreateClub.class);
+                Intent intent = new Intent(MainActivity.this, Clubs.class);
                 startActivity(intent);
             }
         });
