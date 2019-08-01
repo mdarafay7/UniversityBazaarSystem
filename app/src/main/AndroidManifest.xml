@@ -20,6 +20,7 @@
     <activity android:name=".CreateAccount"></activity>
         <activity android:name=".Clubs" />
         <activity android:name=".Forum" />
+        <activity android:name=".CreateClub" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

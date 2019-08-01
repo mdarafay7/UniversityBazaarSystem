@@ -8,7 +8,7 @@
     android:background="@drawable/download"
     android:backgroundTintMode="screen"
     android:hapticFeedbackEnabled="true"
-    tools:context=".MainActivity">
+    tools:context=".Clubs">
 
     <Button
         android:id="@+id/button4"
@@ -18,8 +18,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="169dp"
         android:layout_marginBottom="24dp"
-        android:background="#FF6D00"
-        android:text="TRADE" />
+        android:background="#FF6D00" />
 
     <Button
         android:id="@+id/main"
@@ -27,10 +26,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="25dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="879dp"
         android:background="#FF6D00"
-        android:text="CLUBS" />
+        android:text="CREATE" />
 
     <Button
         android:id="@+id/button3"
@@ -43,5 +42,21 @@
         android:background="#FF6D00"
         android:text="TRADE" />
 
+    <TextView
+        android:id="@+id/tvClubList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLUBS"
+        android:textSize="25dp"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/llClubList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/tvClubList"
+        android:layout_marginTop="16dp">
+    </LinearLayout>
 
 </RelativeLayout>
