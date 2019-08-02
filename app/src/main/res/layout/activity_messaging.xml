@@ -1,36 +1,66 @@
-<LinearLayout
-    android:id="@+id/main_layout"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_list"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:background="@drawable/download"
+    android:backgroundTintMode="screen"
+    android:hapticFeedbackEnabled="true"
+    tools:context=".Messaging">
 
-    <!-- our toolbar -->
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
+    <Button
+        android:id="@+id/Single"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        android:layout_height="69dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="169dp"
+        android:layout_marginBottom="24dp"
+        android:layout_x="0dp"
+        android:layout_y="312dp"
+        android:background="#FF6D00"
+        android:text="PRIVATE" />
 
-    <!-- our tablayout to display tabs  -->
-    <android.support.design.widget.TabLayout
-        android:id="@+id/tabLayout"
+    <Button
+        android:id="@+id/create_club"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+        android:layout_height="78dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="0dp"
+        android:layout_x="0dp"
+        android:layout_y="412dp"
+        android:background="#FF6D00"
+        android:text="ALL" />
 
-    <!-- View pager to swipe views -->
-    <android.support.v4.view.ViewPager
-        android:id="@+id/pager"
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="416dp"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="285dp"
+        android:layout_marginBottom="3dp"
+        android:layout_x="0dp"
+        android:layout_y="531dp"
+        android:background="#FF6D00"
+        android:text="SUB GROUP" />
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"/>
+        android:layout_height="112dp"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        android:fontFamily="@font/habibi"
+        android:text="Welcome mdarafay"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="61dp" />
 
-</LinearLayout>
+
+</AbsoluteLayout>

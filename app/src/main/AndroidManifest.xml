@@ -22,6 +22,7 @@
         <activity android:name=".Clubs" />
         <activity android:name=".Forum" />
         <activity android:name=".CreateClub" />
+        <activity android:name=".Messaging" />
 
 
         <meta-data
