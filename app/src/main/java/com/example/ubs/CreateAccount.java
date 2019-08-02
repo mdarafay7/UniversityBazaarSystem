@@ -13,37 +13,61 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class CreateAccount extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
 
-    private EditText FirstName;
-    private EditText LastName;
+    private EditText Name;
     private EditText Email;
     private EditText Password;
     private Button CreateBtn;
     private TextView LoginLink;
     private Intent intent;
+    private FirebaseFirestore mFirestore;
 
     private void createUser(String email, String pass){
 
-        // Initialize Firebase Auth
-        mAuth = FirebaseAuth.getInstance();
 
-        if (mAuth.getCurrentUser() != null ){
-            intent = new Intent(CreateAccount.this,MainActivity.class);
-            startActivity(intent);
-        }
+
+
+        mAuth = FirebaseAuth.getInstance();
+        mFirestore=FirebaseFirestore.getInstance();
 
         mAuth.createUserWithEmailAndPassword(email, pass)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            Name=findViewById(R.id.nameTXT);
+                            String email=Email.getText().toString();
+                            String name=Name.getText().toString();
+                            Map<String,String> userMap=new HashMap<>();
+                            userMap.put("Name",name);
+                            userMap.put("EMAIL",email);
+                            mFirestore.collection("Users").add(userMap).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                                @Override
+                                public void onSuccess(DocumentReference documentReference) {
+                                    Toast.makeText(CreateAccount.this,"User Added",Toast.LENGTH_LONG).show();
+                                }
+
+                            }).addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    String error=e.getMessage();
+                                    Toast.makeText(CreateAccount.this,"ERROR"+error,Toast.LENGTH_LONG).show();
+                                }
+                            });
                             // Sign in success, update UI with the signed-in user's information
                             Log.d("CREATEUSER", "createUserWithEmail:success");
                             intent = new Intent(CreateAccount.this,Login.class);
