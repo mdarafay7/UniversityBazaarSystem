@@ -14,9 +14,9 @@ public class Messaging extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_messaging);
 
-        single=findViewById(R.id.Single);
+        single = findViewById(R.id.Single);
 
         single.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,7 +25,8 @@ public class Messaging extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //TextView myAwesomeTextView = (TextView)findViewById(R.id.textView2);
+        //myAwesomeTextView.setText("University Bazaar System");
     }
-    //TextView myAwesomeTextView = (TextView)findViewById(R.id.textView2);
-    //myAwesomeTextView.setText("University Bazaar System");
 }

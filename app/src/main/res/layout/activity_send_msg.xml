@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9EAEE"
+    android:backgroundTint="#DFD1D1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/To_TextBox"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/Message"
+        android:layout_width="361dp"
+        android:layout_height="380dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_x="104dp"
+        android:layout_y="240dp"
+        android:background="#00BFA5"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEND" />
+
+
+</LinearLayout>

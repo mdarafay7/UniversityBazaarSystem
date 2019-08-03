@@ -23,8 +23,8 @@
         <activity android:name=".Forum" />
         <activity android:name=".CreateClub" />
         <activity android:name=".Messaging" />
-
-
+        <activity android:name=".UsrMsg" />
+        <activity android:name=".UsrSendMsg" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

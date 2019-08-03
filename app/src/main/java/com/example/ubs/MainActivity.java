@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button Clubs;
+    private Button Clubs,Messaging;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,11 +19,22 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(MainActivity.this,"Club has been added",Toast.LENGTH_LONG).show();
 
         Clubs=findViewById(R.id.Clubs);
+        Messaging=findViewById(R.id.msg_btn);
+
 
         Clubs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Clubs.class);
+                startActivity(intent);
+            }
+        });
+
+
+        Messaging.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Messaging.class);
                 startActivity(intent);
             }
         });
