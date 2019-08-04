@@ -21,7 +21,7 @@
         android:layout_x="0dp"
         android:layout_y="319dp"
         android:background="#FF6D00"
-        android:text="CLUBZ" />
+        android:text="CLUBS" />
 
     <Button
         android:id="@+id/msg_btn"
@@ -34,7 +34,7 @@
         android:layout_x="0dp"
         android:layout_y="412dp"
         android:background="#FF6D00"
-        android:text="CLUBS" />
+        android:text="MESSAGING" />
 
     <Button
         android:id="@+id/button3"
@@ -47,7 +47,7 @@
         android:layout_x="0dp"
         android:layout_y="531dp"
         android:background="#FF6D00"
-        android:text="FORUM" />
+        android:text="EXCHANGE" />
 
     <TextView
         android:id="@+id/textView"

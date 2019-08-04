@@ -10,8 +10,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="0dp"
         android:text="TextView"
-        android:onClick="onClick"
-        android:clickable="true"/>
+       />
 
     <TextView
         android:id="@+id/desc_text"

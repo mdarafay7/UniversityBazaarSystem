@@ -47,8 +47,6 @@ public class UsrMsg extends AppCompatActivity {
                 }
 
 
-
-
                 for(DocumentChange doc : documentSnapshots.getDocumentChanges())
                 {
                     if(doc.getType()==DocumentChange.Type.ADDED)
