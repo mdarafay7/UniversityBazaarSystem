@@ -1,6 +1,6 @@
 package com.example.ubs;
 
-public class ClubData {
+public class ClubData extends UserId{
     public ClubData()
     {
 

@@ -25,6 +25,7 @@
         <activity android:name=".Messaging" />
         <activity android:name=".UsrMsg" />
         <activity android:name=".UsrSendMsg" />
+        <activity android:name=".ClubMsg" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

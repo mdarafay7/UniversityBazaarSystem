@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/download"
+    android:backgroundTintMode="screen"
+>
+
+    <TextView
+        android:id="@+id/Club_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@color/design_default_color_primary"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="25dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/tvPostMsg"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:layout_below="@id/Club_Name"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:backgroundTint="#00641616"
+        android:backgroundTintMode="add"
+        android:maxLength="300" />
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="200px"
+        android:layout_height="100px"
+        android:layout_below="@+id/tvPostMsg"
+        android:layout_alignEnd="@+id/tvPostMsg"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="146dp"
+        android:background="@drawable/common_google_signin_btn_icon_disabled"
+        android:backgroundTint="#00221414"
+        android:backgroundTintMode="add"
+        android:text="POST" />
+
+    <LinearLayout
+        android:id="@+id/llMsgDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPost"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    </LinearLayout>
+
+</RelativeLayout>

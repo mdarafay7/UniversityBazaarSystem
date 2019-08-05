@@ -32,7 +32,7 @@ private Button CreateClub;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clubs);
         ClubsList=new ArrayList<>();
-        clubsListAdapter=new ClubsListAdapter(ClubsList);
+        clubsListAdapter=new ClubsListAdapter(getApplicationContext(),ClubsList);
         MainList=(RecyclerView)findViewById(R.id.main_list);
         MainList.setHasFixedSize(true);
         MainList.setLayoutManager(new LinearLayoutManager(this));
@@ -62,7 +62,8 @@ private Button CreateClub;
                 {
                     if(doc.getType()==DocumentChange.Type.ADDED)
                     {
-                      ClubData clubs=doc.getDocument().toObject(ClubData.class);
+                        String user_id=doc.getDocument().getId();
+                      ClubData clubs=doc.getDocument().toObject(ClubData.class).withId(user_id);
                       ClubsList.add(clubs);
                       clubsListAdapter.notifyDataSetChanged();
 

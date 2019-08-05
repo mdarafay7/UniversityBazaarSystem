@@ -34,7 +34,7 @@ public class UsrSendMsg  extends AppCompatActivity {
     private FirebaseFirestore db=FirebaseFirestore.getInstance();
    private CollectionReference ref=db.collection("Users");
    private EditText message;
-private String to_Str;
+    private String to_Str;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,7 +65,6 @@ private String to_Str;
 
 
                 }
-                to.setText(data);
 
                 mFirestore=FirebaseFirestore.getInstance();
                 message=findViewById(R.id.Message);
