@@ -15,7 +15,14 @@ public class MsgSender {
         Email = email;
     }
 
+
+    public String getCONTENT() {
+        return CONTENT;
+    }
+
     private String Email;
+
+    private String CONTENT;
 
     public MsgSender()
     {

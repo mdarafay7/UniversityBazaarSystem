@@ -2,8 +2,10 @@ package com.example.ubs;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,25 +23,30 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 public class ClubMsg extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
-    private String UID,UsersName;
+    private String UID,UsersName,Club_msg;
     final String TAG="FireLog";
     private Button send;
     private FirebaseFirestore mFirestore;
     private FirebaseFirestore db=FirebaseFirestore.getInstance();
     private CollectionReference ref=db.collection("Users");
+    private CollectionReference ref2=db.collection("Messages");
     private EditText message;
     private String to_Str;
+    ListView listView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_club_info);
+        listView=(ListView)findViewById(R.id.listview);
+        final ArrayList<String>arrayList=new ArrayList<>();
         final TextView c_name=findViewById(R.id.Club_Name);
         mAuth=FirebaseAuth.getInstance();
         final FirebaseUser theUser = mAuth.getCurrentUser();
@@ -47,6 +54,26 @@ public class ClubMsg extends AppCompatActivity {
         {UID = theUser.getEmail().toString();}
         to_Str=getIntent().getStringExtra("CLUB_NAME");
         c_name.setText(to_Str);
+        mFirestore = FirebaseFirestore.getInstance();
+        ref2.whereEqualTo("TO",to_Str).get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+            @Override
+            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                for (QueryDocumentSnapshot documentSnapshot:queryDocumentSnapshots)
+                {
+                    MsgSender getter = documentSnapshot.toObject(MsgSender.class);
+                    Club_msg=getter.getCONTENT();
+                    arrayList.add(Club_msg);
+
+
+                }
+                ArrayAdapter arrayAdapter=new ArrayAdapter(ClubMsg.this,android.R.layout.simple_list_item_1,arrayList);
+                listView.setAdapter(arrayAdapter);
+
+            }
+        });
+
+
+
         send=findViewById(R.id.btnPost);
         send.setOnClickListener(new View.OnClickListener() {
             @Override
