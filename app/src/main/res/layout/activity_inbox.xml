@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_lisdt"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/download"
-    android:backgroundTintMode="screen"
-    android:hapticFeedbackEnabled="true"
-    tools:context=".UsrMsg">
-
+    android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/InboxTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/activity_vertical_margin"
@@ -20,21 +12,29 @@
         android:layout_marginEnd="@dimen/activity_vertical_margin"
         android:layout_marginBottom="@dimen/activity_vertical_margin"
         android:background="@color/design_default_color_primary"
-        android:text="Send Message To:"
         android:textAlignment="center"
         android:textColor="@color/common_google_signin_btn_text_dark_focused"
         android:textSize="25dp"
+        android:text="INBOX"
         android:textStyle="italic" />
 
 
+    <LinearLayout
+        android:id="@+id/llMsgDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InboxTitle"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/usr_msgList"
-        android:layout_width="265dp"
-        android:layout_below="@id/title"
-        android:layout_height="424dp"></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/msg_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/InboxTitle" />
+
 
 
 </RelativeLayout>
-
-

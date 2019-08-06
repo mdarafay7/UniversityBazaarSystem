@@ -19,7 +19,7 @@
         android:layout_marginStart="169dp"
         android:layout_marginBottom="24dp"
         android:layout_x="0dp"
-        android:layout_y="319dp"
+        android:layout_y="210dp"
         android:background="#FF6D00"
         android:text="CLUBS" />
 
@@ -31,36 +31,61 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="25dp"
         android:layout_marginBottom="0dp"
-        android:layout_x="0dp"
-        android:layout_y="412dp"
+        android:layout_x="-2dp"
+        android:layout_y="294dp"
         android:background="#FF6D00"
         android:text="MESSAGING" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="416dp"
+        android:id="@+id/trade_btn"
+        android:layout_width="match_parent"
         android:layout_height="67dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="285dp"
         android:layout_marginBottom="3dp"
-        android:layout_x="0dp"
-        android:layout_y="531dp"
+        android:layout_x="-1dp"
+        android:layout_y="478dp"
         android:background="#FF6D00"
-        android:text="EXCHANGE" />
+        android:text="trade" />
+
+    <Button
+        android:id="@+id/exchange_btn"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="285dp"
+        android:layout_marginBottom="3dp"
+        android:layout_x="-2dp"
+        android:layout_y="394dp"
+        android:background="#FF6D00"
+        android:text="EXCHANGE POST" />
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="112dp"
-        android:layout_x="0dp"
-        android:layout_y="0dp"
-        android:fontFamily="@font/habibi"
-        android:text="Welcome mdarafay"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@color/design_default_color_primary"
         android:textAlignment="center"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="61dp" />
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="25dp"
+        android:textStyle="italic" />
+
+    <ListView
+
+        android:id="@+id/exchange_listView"
+        android:layout_width="395dp"
+        android:layout_height="114dp"
+        android:layout_below="@id/textView"
+        android:layout_y="77dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="120dp" />
 
 
 </AbsoluteLayout>

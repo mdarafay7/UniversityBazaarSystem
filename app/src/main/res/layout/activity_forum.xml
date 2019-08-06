@@ -1,67 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_lisdt"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/download"
-    android:backgroundTintMode="screen"
-    android:hapticFeedbackEnabled="true"
-    tools:context=".Forum">
+    android:layout_height="match_parent"
+    android:background="#D9EAEE"
+    android:backgroundTint="#DFD1D1"
+    android:orientation="vertical">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/main_list"
+    <TextView
+        android:id="@+id/Head"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="-1dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginBottom="59dp"
-        android:background="#A7C9E2"
-        tools:itemCount="8"
-        tools:listitem="@layout/recycler_view_item"></androidx.recyclerview.widget.RecyclerView>
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@color/design_default_color_primary"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="25dp"
+        android:text="Exchange Post"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/Message"
+        android:layout_width="337dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_x="104dp"
+        android:layout_y="240dp"
+        android:background="#00BFA5"
+        android:ems="10"
+        android:inputType="textMultiLine" />
 
     <Button
-        android:id="@+id/Clubs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="169dp"
-        android:layout_marginBottom="24dp"
-        android:background="#FF6D00"
-        android:text="TRADE" />
-
-    <Button
-        android:id="@+id/msg_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="25dp"
-        android:layout_marginBottom="0dp"
-        android:background="#FF6D00"
-        android:text="CLUBS" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="325dp"
-        android:layout_marginBottom="17dp"
-        android:background="#FF6D00"
-        android:text="FORUM" />
-
-    <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/post_btn"
         android:layout_width="match_parent"
-        android:layout_height="102dp"
-        android:paddingLeft="10dp"
-        app:srcCompat="@drawable/forum" />
+        android:layout_height="wrap_content"
+        android:text="post" />
 
 
-</RelativeLayout>
+</LinearLayout>

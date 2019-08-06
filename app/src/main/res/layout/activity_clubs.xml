@@ -17,37 +17,15 @@
 
 
     <Button
-        android:id="@+id/Clubs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="169dp"
-        android:layout_marginBottom="24dp"
-        android:background="#FF6D00" />
-
-    <Button
         android:id="@+id/create_club"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="34dp"
-        android:layout_marginBottom="879dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginBottom="6dp"
         android:background="#FF6D00"
         android:text="CREATE" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="285dp"
-        android:layout_marginBottom="3dp"
-        android:background="#FF6D00"
-        android:text="TRADE" />
-
 
 
 </RelativeLayout>

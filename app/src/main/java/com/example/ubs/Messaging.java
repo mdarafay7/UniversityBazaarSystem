@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Messaging extends AppCompatActivity {
 
-    private Button single;
+    private Button single,inboxb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,14 @@ public class Messaging extends AppCompatActivity {
             }
         });
 
-        //TextView myAwesomeTextView = (TextView)findViewById(R.id.textView2);
-        //myAwesomeTextView.setText("University Bazaar System");
+        inboxb=findViewById(R.id.inbox_btn);
+                inboxb.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Messaging.this, Inbox.class);
+                        startActivity(intent);
+                    }
+                });
+
     }
 }

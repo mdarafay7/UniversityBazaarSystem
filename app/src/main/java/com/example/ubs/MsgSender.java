@@ -20,10 +20,18 @@ public class MsgSender {
         return CONTENT;
     }
 
+
+    public String getFROM() {
+        return FROM;
+    }
+
+
+
     private String Email;
 
     private String CONTENT;
 
+    private String FROM;
     public MsgSender()
     {
 

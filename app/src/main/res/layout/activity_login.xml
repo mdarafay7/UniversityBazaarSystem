@@ -7,24 +7,6 @@
     android:background="#00BFA5"
     tools:context=".Login">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="login"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.09" />
-
 
     <EditText
         android:id="@+id/etUserName"
@@ -33,8 +15,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="524dp"
-        android:layout_x="104dp"
-        android:layout_y="172dp"
+        android:layout_x="53dp"
+        android:layout_y="140dp"
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
@@ -51,8 +33,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:layout_x="104dp"
-        android:layout_y="240dp"
+        android:layout_x="56dp"
+        android:layout_y="188dp"
         android:background="#00BFA5"
         android:ems="10"
         android:hint="Password"
@@ -72,8 +54,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:layout_x="172dp"
-        android:layout_y="295dp"
+        android:layout_x="112dp"
+        android:layout_y="281dp"
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,8 +72,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:layout_x="117dp"
-        android:layout_y="349dp"
+        android:layout_x="53dp"
+        android:layout_y="333dp"
         android:text="New user? Create Account"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,10 +84,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_x="125dp"
-        android:layout_y="17dp"
+        android:layout_width="260dp"
+        android:layout_height="117dp"
+        android:layout_x="36dp"
+        android:layout_y="-1dp"
         app:srcCompat="@drawable/login"
         tools:layout_editor_absoluteX="131dp"
         tools:layout_editor_absoluteY="16dp" />

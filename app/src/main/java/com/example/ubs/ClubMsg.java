@@ -64,7 +64,6 @@ public class ClubMsg extends AppCompatActivity {
                     Club_msg=getter.getCONTENT();
                     arrayList.add(Club_msg);
 
-
                 }
                 ArrayAdapter arrayAdapter=new ArrayAdapter(ClubMsg.this,android.R.layout.simple_list_item_1,arrayList);
                 listView.setAdapter(arrayAdapter);
@@ -88,7 +87,10 @@ public class ClubMsg extends AppCompatActivity {
                             UsersName = name.getName();
 
 
+
                         }
+
+
                         mFirestore = FirebaseFirestore.getInstance();
                         message = findViewById(R.id.tvPostMsg);
                         String msg = message.getText().toString();
